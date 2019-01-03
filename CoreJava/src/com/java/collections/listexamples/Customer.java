@@ -57,6 +57,7 @@ public class Customer {
 
 	@Override
 	public boolean equals(Object obj) {
+		System.out.println("Equals: " + this + " vs " + obj);
 		if (this == obj)
 			return true;
 

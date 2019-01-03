@@ -47,7 +47,9 @@ public class DriverAlist extends Customer {
 		System.out.println("Knid value: " + str);
 		System.out.println("toString value: " + Alist.toString());
 		Customer cust = (Customer) Alist.createCustomer();
+		Customer cust1 = (Customer) Alist.createCustomer();
 		System.out.println("Knid value: " + cust.getKnid());
+		System.out.println(cust.equals(cust1));
 //	      System.out.println("toString value: " + cust.toString());
 	}
 
