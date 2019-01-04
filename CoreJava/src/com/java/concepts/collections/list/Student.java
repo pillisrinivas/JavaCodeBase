@@ -1,4 +1,4 @@
-package com.java.collections.listexamples;
+package com.java.concepts.collections.list;
 
 import java.util.ArrayList;
 import java.util.*;

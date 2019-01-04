@@ -1,4 +1,4 @@
-package com.java.collections.listexamples;
+package com.java.concepts.generics;
 
 public class Customer {
 

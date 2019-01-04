@@ -1,6 +1,8 @@
-package com.java.collections.listexamples;
+package com.java.concepts.collections.list;
 
 import java.util.ArrayList;
+
+import com.java.concepts.generics.Customer;
 
 public class DriverAlist extends Customer {
 
@@ -18,9 +20,9 @@ public class DriverAlist extends Customer {
 		// TODO Auto-generated method stub
 		ArrayList<String> al = new ArrayList<String>();
 		al.add("pen");
-		al.add("pencil");
-		al.add("ink");
-		al.add("notebook");
+//		al.add("pencil");
+//		al.add("ink");
+//		al.add("notebook");
 		al.add(null);
 
 		System.out.println("ArrayList contains the string 'ink pen': " + al.contains("ink pen"));
