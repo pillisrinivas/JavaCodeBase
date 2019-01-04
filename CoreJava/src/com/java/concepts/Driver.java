@@ -11,10 +11,7 @@ public class Driver {
 		System.out.println("Driver1!");
 		System.out.println("What's up?");
 		
-		String[] obj5 = new String[1];
-		ArrayList<String> astr = new ArrayList<String>();
-		astr.add("Hello");
-		astr.add("you");
+
 		System.out.println("Size of empty arraylist: " + astr.size());
 		Driver drv = new Driver();
 		String d = drv.toString();
