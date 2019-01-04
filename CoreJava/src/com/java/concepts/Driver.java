@@ -1,6 +1,8 @@
 package com.java.concepts;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Driver {
@@ -28,15 +30,28 @@ public class Driver {
 		System.out.println("Print of array arr"  + Arrays.toString(arr));
 		
 		List<Object> str1;
-		List<String> str4;
-
+		ArrayList<String> str4;
+		str4 = new ArrayList<String>();
+		str4.add("srini");
+		str4.add("ball");
+		str4.add("Siri");
+		
+		System.out.println("str4: " + str4);
+		List<String> str5 = (List<String>) str4.clone();
+		System.out.println("clone of str4: str5" + str5);
+		str5.add("Sunny");
+		str5.add("Khanna");
+		System.out.println("str4: " + str4);
+		System.out.println("str4: " + str4);
+		
+		
 		str1 = Arrays.asList(v);
 		System.out.println("Value of str1(v): " + str1);
 		System.out.println("Value of str1(v): " + str1.getClass().getName());
 		for (Object obj : str1) {
 			System.out.println("Individual Value of str1(v): " + obj);
 		}
-
+		
 		Object[] v2 = new Object[3];
 		v2[0] = "How are you";
 		v2[1] = Integer.valueOf(99);
@@ -54,6 +69,7 @@ public class Driver {
 		Customer c2 = new Customer("Siri");
 		Customer c3 = new Customer("Khanna");
 		
+		
 		Customer[] cu = new Customer[3];
 		cu[2] = new Customer("Kiran");
 		cu[1] = c2;
@@ -68,8 +84,13 @@ public class Driver {
 		for (Customer co: cu) {
 			System.out.println("Sorted Customer array: " + co.toString());
 		}
-		System.out.println(cu);
+		
+		List<Customer> cref = Arrays.asList(cu);
+		System.out.println("cref: " + cref);
 //		System.out.println("Sorted Customer object: " + Arrays.parallelSort(cu));
+		
+		Collections.sort(cref, Collections.reverseOrder());
+		System.out.println("cref: reverse order " + cref);
 		
 		String[] v3 = new String[3];
 		v3[0] = "How are you";

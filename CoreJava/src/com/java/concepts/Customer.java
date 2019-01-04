@@ -1,6 +1,6 @@
 package com.java.concepts;
 
-public class Customer implements Comparable<Customer>{
+public class Customer implements Comparable<Customer>, Cloneable{
 	private String name;
 
 	public String getName() {

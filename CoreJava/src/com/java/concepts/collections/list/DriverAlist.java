@@ -38,6 +38,14 @@ public class DriverAlist extends Customer {
 		al2.add(13);
 		al2.add(44);
 		al2.add(6);
+		System.out.println("al2 :" + al2);
+		ArrayList<Integer> al3 = new ArrayList<Integer>();
+		al3.addAll(al2);
+		System.out.println("al3: copy of al2" + al3);
+		al3.addAll(al2);
+		System.out.println("al3 + al2:" + al3);
+		
+		
 
 		System.out.println("'1' is present in arraylist: " + al2.contains(1));
 		System.out.println("'55' is present in arraylist: " + al2.contains(55));
