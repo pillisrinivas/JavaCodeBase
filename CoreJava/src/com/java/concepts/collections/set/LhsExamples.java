@@ -42,6 +42,8 @@ public class LhsExamples {
 
 		System.out.println("==============================================");
 		System.out.println("Adding one LinkedHashSet to another LinkedHashSet: ");
+		
+		
 		LinkedHashSet<Customer> hs2 = new LinkedHashSet<Customer>(hs1);
 
 //		Repeat the same elements
