@@ -48,12 +48,12 @@ public class HashMapDemo {
 		System.out.println("Size of the map: " + map.size());
 
 /* We are trying to retrieve m2, by creating object m4 with exact values as of m2, However Hashcode method is not implemented and that why we are not able to get Object m2 */
-		if(map.get(m4) == null ){
+		if(map.get(m3) == null ){
 			System.out.println("----------------");
 			System.out.println("Object not found");
 			System.out.println("----------------");
 		}else{
-			System.out.println(map.get(m4).toString());
+			System.out.println(map.get(m3).toString());
 		}
 	}
 }
