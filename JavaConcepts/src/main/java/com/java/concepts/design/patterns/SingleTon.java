@@ -1,5 +1,6 @@
 package com.java.concepts.design.patterns;
 
+// SingleTon design pattern
 
 public class SingleTon {
 	public static void main(String[] args) {
